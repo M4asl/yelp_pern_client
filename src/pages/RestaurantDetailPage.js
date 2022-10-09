@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import { RestaurantsContext } from '../context/RestaurantsContext';
 import RestaurantFinder from '../apis/RestaurantFinder';
 import StarRating from '../components/StarRating';
+import AddReview from '../components/AddReview';
 
 const RestaurantDetailPage = () => {
   const { id } = useParams();
@@ -41,6 +42,7 @@ const RestaurantDetailPage = () => {
                 : '(0)'}
             </span>
           </div>
+          <AddReview />
         </>
       )}
     </div>
